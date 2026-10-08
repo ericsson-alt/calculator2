@@ -1,0 +1,87 @@
+.App{
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-image:
+    radial-gradient(circle at 10% 20%, #d4af37 1px, transparent 1px),
+    radial-gradient(circle at 90% 80%, #d4af37 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.CalculatorContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Header{
+  text-align: center;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 10px;
+}
+
+.HeaderLine{
+  width: 100%;
+  height: 2px;
+  background-color: #d4af37;
+  margin-bottom: 20px;
+}
+
+.Calculator{
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid #d4af37;
+  min-height: 100px;
+  padding: 25px;
+  background-color: #0d0d0d;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px #aaaaaa;
+}
+
+.Display{
+  border: 1px solid #d4af37;
+  height: 50px;
+  font-size: 2em;
+  padding: 12px;
+  text-align: right;
+  background-color: #1a1a1a;
+  color: #f0c75e;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.Keypad{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.Button{
+  justify-content: center;
+  border: 1px solid #444444;
+  font-size: 2em;
+  background-color: #262626;
+  color: #eeeeee;
+  border-radius: 8px;
+  padding: 17px;
+  cursor: pointer;
+}
+
+.Button:hover{
+  background-color: #d4af37;
+  color: #111111;
+  border-color: #d4af37;
+}
+
+.Keypad .Button:last-child{
+  grid-column: 1 / -1;
+}
